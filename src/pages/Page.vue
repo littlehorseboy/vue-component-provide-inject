@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ListContainer :list="list" />
+    <ListContainer />
   </div>
 </template>
 
@@ -10,6 +10,11 @@ import ListContainer from '@/components/ListContainer';
 export default {
   components: {
     ListContainer,
+  },
+  provide() {
+    return {
+      list: this.list,
+    };
   },
   data() {
     return {

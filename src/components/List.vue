@@ -8,8 +8,6 @@
 
 <script>
 export default {
-  props: {
-    list: Array,
-  },
+  inject: ['list'],
 };
 </script>

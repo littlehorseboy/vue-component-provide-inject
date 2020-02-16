@@ -1,6 +1,6 @@
 <template>
   <div>
-    <List :list="list" />
+    <List />
   </div>
 </template>
 
@@ -10,9 +10,6 @@ import List from './List';
 export default {
   components: {
     List,
-  },
-  props: {
-    list: Array,
   },
 };
 </script>
